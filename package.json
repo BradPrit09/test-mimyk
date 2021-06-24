@@ -1,19 +1,19 @@
 {
   "name": "example",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A simple test of Electron Updater",
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JINU98/test-mimyk"
+    "url": "https://github.com/BradPrit09/test-mimyk.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder build --win --publish never",
-    "deploy": "electron-builder build --win --publish always"
+    "build": "electron-builder build --linux  deb tar.xz --publish never",
+    "deploy": "electron-builder build --linux  deb tar.xz --publish always"
   },
-  "author": "",
+  "author": "BradPrit09 <pritamchandra93@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "electron": "^12.0.9",
