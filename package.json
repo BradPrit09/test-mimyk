@@ -10,11 +10,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder build --linux  deb tar.xz --publish never",
-    "deploy": "electron-builder build --linux  deb tar.xz --publish always"
+    "build": "electron-builder build --linux  deb tar.xz --publish=never",
+    "deploy": "electron-builder build --linux  deb tar.xz --publish=always"
   },
   "author": "BradPrit09 <pritamchandra93@gmail.com>",
   "license": "ISC",
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "BradPrit09",
+      "repo": "https://github.com/BradPrit09/test-mimyk.git"
+    }
+  ],
   "devDependencies": {
     "electron": "^12.0.9",
     "electron-builder": "^22.10.5"
